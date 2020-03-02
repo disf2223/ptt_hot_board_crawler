@@ -75,6 +75,5 @@ for board_url in board_urls:
         for article_url in article_urls:
             article_resp = page_info(article_url)
             meta = get_meta_data(article_resp.text)
-            print(meta)
             tcol.insert_one(meta)
 
